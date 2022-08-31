@@ -13,22 +13,20 @@ function loadMenu(){
     }   }
 
 function displayImg(images){
-    const Name=document.querySelector('#ramen-menu')
+    const ImageDiv=document.querySelector('#ramen-menu')
     images.forEach(Image => {
         const img=document.createElement('img');
         img.src=Image.image
-        Name.appendChild(img)
+        ImageDiv.appendChild(img)
         //  Name.appendChild(h3)
 
-        const imgSelect=document.querySelector('#ramen-menu')
+        // const imgSelect=document.querySelector('#ramen-menu')
        
         img.addEventListener("click",()=>{
         //     // const selectedImage=document.querySelector('#ramen-detail')
                     console.log(Image.name)
-            
         //     // const imgg=document.getElementById('#img');
-            
-        //     imgg.src=dispImg.image
+              //     imgg.src=dispImg.image
         //     selectedImage.appendChild(imgg)
         });
     });
